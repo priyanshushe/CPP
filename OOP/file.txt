@@ -1,0 +1,10 @@
+ I am ChatGPT
+an ai model created by Openai
+designed to understand and generate human-like text.
+ My foundation is built on a large dataset of information,
+ which allows me to assist with a wide variety of topics such as programming,
+ science, writing, learning, and problem-solving.
+ I can explain concepts, create code, summarize information, and even generate creative content.
+ My goal is to make learning and working easier, faster, and more engaging.
+ While I do not have feelings or personal experiences, I adapt to your needs and style.
+ Think of me as a knowledgeable, always-available study and work companion.
