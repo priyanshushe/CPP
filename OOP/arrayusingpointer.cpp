@@ -11,7 +11,7 @@ class complex{
         }
         void display()
         {
-            cout<<"The complex number is "<<real<<"+i"<<imaginary<<endl;
+            cout<<"The complex dg number is "<<real<<"+i"<<imaginary<<endl;
         }
 };
 int main()
