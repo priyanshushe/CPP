@@ -6,12 +6,12 @@ int main()
     vector<int>vec1;                                               //initializes vector with 0 size
     vector<int>vec2{0,2,4};                                        //initializes vector with 3 size and resepctive elements
     vector<int>vec3(3,4);                                          //will print 4 3 times
-    // cout<<vec1.size()<<endl;
-    // cout<<vec2.size()<<endl;
-    // cout<<vec3.size()<<endl;
-    // cout<<vec1.capacity()<<endl;
-    // cout<<vec2.capacity()<<endl;
-    // cout<<vec3.capacity()<<endl;
+    cout<<vec1.size()<<endl;
+    cout<<vec2.size()<<endl;
+    cout<<vec3.size()<<endl;
+    cout<<vec1.capacity()<<endl;
+    cout<<vec2.capacity()<<endl;
+    cout<<vec3.capacity()<<endl;
     cout<<vec3.front()<<endl;
     cout<<vec3.back()<<endl;
     cout<<vec2.at(2)<<endl;
@@ -19,6 +19,7 @@ int main()
     {
         vec1.push_back(i);
     }
+    cout<<*(vec1.end());  
     for(int i=0;i<8;i++)
     {
         cout<<vec1[i]<<" ";
@@ -31,8 +32,8 @@ int main()
     }
     cout<<endl;
 
-    cout<<*(vec1.end());                                             //vec.end() or vec.begin() is a pointer 
-    //vec1.erase(vec1.begin()+3);
+    cout<<*(vec1.end()); //will give unexpected behaviour                                            //vec.end() or vec.begin() is a pointer 
+    vec1.erase(vec1.begin()+3);
     vec1.erase(vec1.begin()+2,vec1.begin()+5);
     vector<int>::iterator itr;                                       //can be manually initialized like this
     for(itr=vec1.begin();itr!=vec1.end();itr++)
@@ -48,5 +49,10 @@ int main()
     for(auto iter=vec1.rbegin();iter!=vec1.rend();iter++)            //rbegin points to last element
     {
         cout<<*(iter)<<endl;
+    }
+    vector<int> vec5(vec1);
+    for(auto iter=vec5.begin();iter!=vec5.end();iter++)                 //automatically initializes iterator
+    {
+        cout<<*(iter)<<" ";
     }
 }
