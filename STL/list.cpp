@@ -24,7 +24,7 @@ int main()
     li.pop_front();
     li.pop_back();
     auto it=li.begin();
-    advance(it,3);            //method in list for tracing
+    advance(it,3);            //method in list for tracing.   li.begin()+2 won't work
     li.insert(it,5);
     auto start=li.begin();
     auto end=li.begin();

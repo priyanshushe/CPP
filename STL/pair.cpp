@@ -14,7 +14,8 @@ int main()
     {
         cout<<"Enter The pair to be inserted at position "<<i<<":"<<endl;
         cin>>a>>b;
-        vec.emplace_back(a,b);
+        vec.emplace_back(a,b);  //here emplace back auto create the object at runtime.
+        //vec.push_back({a,b});   here with pushback we have to create object
     }
     for(auto p:vec)
     {
