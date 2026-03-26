@@ -32,7 +32,7 @@ int main()
     }
     cout<<endl;
 
-    cout<<*(vec1.end()); //will give unexpected behaviour                                            //vec.end() or vec.begin() is a pointer 
+    cout<<*(vec1.end()); //will give unexpected behaviour        //vec.end() or vec.begin() is a pointer 
     vec1.erase(vec1.begin()+3);
     vec1.erase(vec1.begin()+2,vec1.begin()+5);
     vector<int>::iterator itr;                                       //can be manually initialized like this
@@ -41,12 +41,12 @@ int main()
         cout<<*(itr)<<" ";
     }
     cout<<endl;
-    vec1.insert(vec1.begin()+2,100);                                 //only accepts iteratora
+    vec1.insert(vec1.begin()+2,100);                                 //only accepts iterator
     cout<<vec1[2]<<endl;
     vec2.clear();
     cout<<vec2.empty();                                              //results bool
     
-    for(auto iter=vec1.rbegin();iter!=vec1.rend();iter++)            //rbegin points to last element
+    for(auto iter=vec1.rbegin();iter!=vec1.rend();iter++)            //rbegin points to last element 
     {
         cout<<*(iter)<<endl;
     }
